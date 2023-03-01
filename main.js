@@ -594,7 +594,6 @@ LinkGame.prototype = {
 
 $(function () {
   $('.start-btn').click(function () {
-    $('audio').get(0).play();
     $('.init-box').addClass('hidden');
     $('.game-box').removeClass('hidden');
     var gameConfig = {
