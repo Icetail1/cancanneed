@@ -579,7 +579,7 @@ LinkGame.prototype = {
       self.checkMatch(data);
     }).on('click', '.sixteen-score', function (event) {
       // 其实逻辑是执行了把复制目标赋值给创建的input的value，使用选中value执行复制 复制完然后移除input的原理
-var Url2 = "IceCan "+score;//获取span框的文本内容
+var Url2 = "IceCan " + self.score;//获取span框的文本内容
 console.log(Url2);
 var input = document.createElement('input'); // 创建input标签，只有input标签选中可以
 input.setAttribute('id', 'copyInput'); // 给input一个id属性
