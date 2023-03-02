@@ -588,9 +588,7 @@ document.getElementsByTagName('body')[0].appendChild(input); // body里面添加
 document.getElementById('copyInput').select(); // 使用js去通过id找到并执行input实体的全部选中
 document.execCommand("Copy"); //原生copy方法执行浏览器复制命令
 document.getElementById('copyInput').remove(); // 为避免下次页面添加copy方法 所以这里copy完之后要移除input实体
-this.$message({
-type: 'success',
-message: '复制成功！'})
+message.warning("复制成功！");
     }).on('click', '.disorder', function (event) {
       self.leftDisorderTime-- > 0 && self.disorder();
     }).on('click', '.replay-btn', function () {
