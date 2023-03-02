@@ -99,6 +99,7 @@ LinkGame.prototype = {
     this.updateLevel();
     this.domUpdateScore();
   },
+
   reset: function () {
     this.init(true);
   },
@@ -183,6 +184,22 @@ LinkGame.prototype = {
     this.updateDomNumbers($('.current-score'), this.score, 3);
     this.setHistoryScore(this.score);
   },
+  copy: function () {
+// 其实逻辑是执行了把复制目标赋值给创建的input的value，使用选中value执行复制 复制完然后移除input的原理
+var Url2 = "IceCan"+this.score.toString(16);//获取span框的文本内容
+console.log(Url2);
+var input = document.createElement('input'); // 创建input标签，只有input标签选中可以
+input.setAttribute('id', 'copyInput'); // 给input一个id属性
+input.setAttribute('value', Url2); // 给input一个value属性，属性值是变量span的文本
+document.getElementsByTagName('body')[0].appendChild(input); // body里面添加input实体
+document.getElementById('copyInput').select(); // 使用js去通过id找到并执行input实体的全部选中
+document.execCommand("Copy"); //原生copy方法执行浏览器复制命令
+document.getElementById('copyInput').remove(); // 为避免下次页面添加copy方法 所以这里copy完之后要移除input实体
+this.$message({
+type: 'success',
+message: '复制成功！'
+})
+},
 
   updateLevel: function () {
     this.updateDomNumbers($('.level'), this.level + 1, 1);
