@@ -287,7 +287,6 @@ LinkGame.prototype = {
       for (var i = 0; i < this.points.length - 1; i++) {
         this.mergeArray(this.linkPictures, this.countPoints(this.points[i], this.points[i + 1]));
       }
-      this.drawLine();
       this.updateStatus(preRow, preCol, curRow, curCol, preIndex, curIndex);
     } else {
       this.domRemoveActive(preIndex);
