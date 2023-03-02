@@ -181,7 +181,7 @@ LinkGame.prototype = {
   gameOver: function () {
     $('.game-over').removeClass('hidden').find('.history-score').text(this.getHistoryScore() || 0);
     this.updateDomNumbers($('.current-score'), this.score, 3);
-    document.getElementById("16-score").value=this.score;
+    this.updateDomNumbers($('.sixteen-score'), this.score, 3);
     this.setHistoryScore(this.score);
   },
 
