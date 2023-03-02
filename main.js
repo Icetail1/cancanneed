@@ -6,8 +6,8 @@ function LinkGame(config) {
   }
   this.score = 0; // 得分
   this.$box = $('#' + (config.boxId || 'game'));
-  this.cellWidth = config.cellWidth || 16; // 每格的的宽度
-  this.cellHeight = config.cellHeight || 16; // 每格的高度
+  this.cellWidth = config.cellWidth || 42; // 每格的的宽度
+  this.cellHeight = config.cellHeight || 42; // 每格的高度
   this.cols = config.cols + 2 || 10; // 列数
   this.rows = config.rows + 2 || 8; // 行数
   this.level = config.level || 0; // 等级
