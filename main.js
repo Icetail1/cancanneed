@@ -88,7 +88,7 @@ LinkGame.prototype = {
     this.pictures = []; // 图片集合
     this.linkPictures = [];
     this.preClickInfo = null; // 上一次被点中的图片信息
-    this.leftTime = 1; // 剩余时间
+    this.leftTime = 5; // 剩余时间
     this.points = []; // 图片可以相消时的拐点集合
     this.timmer = setInterval(function () {
       self.updateCountDown();
@@ -181,7 +181,7 @@ LinkGame.prototype = {
   gameOver: function () {
     $('.game-over').removeClass('hidden').find('.history-score').text(this.getHistoryScore() || 0);
     this.updateDomNumbers($('.current-score'), this.score, 3);
-    this.updateDomNumbers($('.sixteen-score'), this.score, 3);
+    this.updateDomNumbers($('.sixteen-score'), this.score.toString(16), 3);
     this.setHistoryScore(this.score);
   },
 
