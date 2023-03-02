@@ -349,8 +349,8 @@ LinkGame.prototype = {
     var linkList = this.linkPictures;
     var coordinate = [];
     for (var i = 0; i < linkList.length; i++) {
-      var x = linkList[i].col === 0 ? 0 : (linkList[i].col === this.cols - 1 ? $('#game').width() : linkList[i].col * 80 - 40);
-      var y = linkList[i].row === 0 ? 0 : (linkList[i].row === this.rows - 1 ? $('#game').height() : linkList[i].row * 80 - 40);
+      var x = linkList[i].col === 0 ? 0 : (linkList[i].col === this.cols - 1 ? $('#game').width() : linkList[i].col * 25 - 40);
+      var y = linkList[i].row === 0 ? 0 : (linkList[i].row === this.rows - 1 ? $('#game').height() : linkList[i].row * 25 - 40);
       coordinate.push([x, y]);
     }
     var ctx = $canvas[0].getContext('2d');
