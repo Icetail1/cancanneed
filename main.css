@@ -146,7 +146,7 @@ body {
 
 .wrapper .game-box .game-area table#game .game-row td {
   width: 80px;
-  height: 80px;
+  height: 40px;
 
   text-align: center;
   vertical-align: middle;
