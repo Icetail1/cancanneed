@@ -26,7 +26,7 @@ body {
   position: relative;
 
   width: 350px;
-  height: 480px;
+  height: 350px;
   /*border: 1px solid #ccc;*/
   margin: 0 auto;
 
@@ -185,7 +185,7 @@ body {
   top: 0;
 
   width: 350px;
-  height: 480px;
+  height: 350px;
 }
 
 .wrapper .game-over {
