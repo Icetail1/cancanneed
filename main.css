@@ -155,8 +155,8 @@ body {
 
   display: inline-block;
 
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
 
   cursor: pointer;
 
@@ -165,8 +165,8 @@ body {
 }
 
 .wrapper .game-box .game-area table#game .game-row td .pic-box.active {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 
   border-radius: 16px; 
   background: url(images/active.png) center no-repeat;
