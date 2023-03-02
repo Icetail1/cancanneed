@@ -199,6 +199,9 @@ body {
 
 .wrapper .game-over .current-score {
   position: absolute;
+  
+  top: 396px;
+  left: 300px;
 
   width: 350px;
   height: 60px;
@@ -210,6 +213,9 @@ body {
   font-size: 20px; 
 
   position: absolute;
+  
+  top: 396px;
+  left: 300px;
   
   width: 200px;
   height: 30px;
