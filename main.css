@@ -200,8 +200,8 @@ body {
 .wrapper .game-over .current-score {
   position: absolute;
   
-  top: 396px;
-  left: 300px;
+  top: 150px;
+  left: 150px;
 
   width: 350px;
   height: 60px;
