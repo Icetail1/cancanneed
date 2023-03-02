@@ -153,12 +153,12 @@ body {
 }
 
 .wrapper .game-box .game-area table#game .game-row td .pic-box {
-  line-height: 64px;
+  line-height: 16px;
 
   display: inline-block;
 
-  width: 64px;
-  height: 64px;
+  width: 16px;
+  height: 16px;
 
   cursor: pointer;
 
