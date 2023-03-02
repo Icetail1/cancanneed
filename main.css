@@ -81,7 +81,7 @@ body {
 
   position: absolute;
   top: 15px;
-  left: 110px;
+  left: 100px;
 }
 
 .wrapper .game-box .toolbar .level {
@@ -89,7 +89,7 @@ body {
 
   position: absolute;
   top: 12px;
-  left: 100px;
+  left: 70px;
 
   height: 34px;
 }
@@ -101,6 +101,7 @@ body {
 .wrapper .game-box .toolbar .disorder {
   position: absolute;
   top: 40px; 
+  left: 150px;
 
   cursor: pointer;
 }
