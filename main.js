@@ -88,7 +88,7 @@ LinkGame.prototype = {
     this.pictures = []; // 图片集合
     this.linkPictures = [];
     this.preClickInfo = null; // 上一次被点中的图片信息
-    this.leftTime = 10; // 剩余时间
+    this.leftTime = 1; // 剩余时间
     this.points = []; // 图片可以相消时的拐点集合
     this.timmer = setInterval(function () {
       self.updateCountDown();
