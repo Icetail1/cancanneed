@@ -141,19 +141,19 @@ body {
 }
 
 .wrapper .game-box .game-area table#game .game-row {
-  height: 20px;
+  height: 10px;
 }
 
 .wrapper .game-box .game-area table#game .game-row td {
   width: 80px;
-  height: 20px;
+  height: 80px;
 
   text-align: center;
   vertical-align: middle;
 }
 
 .wrapper .game-box .game-area table#game .game-row td .pic-box {
-  line-height: 20px;
+  line-height: 10px;
 
   display: inline-block;
 
